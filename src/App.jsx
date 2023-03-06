@@ -5,8 +5,10 @@ import SearchResult from "./components/SearchResult";
 import { AppContext } from "./utils/ContextApi";
 
 function App() {
+  console.log(process.env);
   return (
     <AppContext>
+      
       <BrowserRouter>
         <Routes>
           <Route path="/" exact element={<Home />} />
